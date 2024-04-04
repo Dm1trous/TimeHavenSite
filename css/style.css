@@ -1,0 +1,594 @@
+@font-face {
+	font-family: 'Valisca';
+    src: local('Valisca'), 
+	url(../fonts/Valisca.ttf); 
+}
+
+@font-face {
+	font-family: 'Montserrat-Regular';
+    src: local('Montserrat-Regular'), 
+	url(../fonts/Montserrat-Regular.ttf); 
+}
+
+@font-face {
+	font-family: 'Montserrat-Bold';
+    src: local('Montserrat-Bold'), 
+	url(../fonts/Montserrat-Bold.ttf); 
+}
+
+@font-face {
+	font-family: 'blinkmacsystemfont-regular';
+    src: local('blinkmacsystemfont-regular'), 
+	url(../blinkmacsystemfont-regular.ttf); 
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Главная страница */
+
+.container-pink {
+    background-color: #ECABCE;
+}
+
+.logo {
+    padding-top: 50px;
+    font-size: 54px;
+    font-family: 'Valisca', sans-serif;
+    line-height: 70px;
+    margin-left: 5%;
+}
+
+.menu_item {
+    font-size: 43px;
+    text-align: right;
+    font-family: 'Montserrat-Regular', sans-serif;
+    margin-right: 5%;
+}
+
+.title-text {
+    padding: 50px 0 90px;
+    font-size: 250px;
+    font-family: 'Valisca', sans-serif;
+    line-height: 230px;
+    position: relative;
+    letter-spacing: 20px;
+    animation: go_title 2s ease-out;
+    margin-left: 5%;
+}
+
+.img {
+    margin-top: 85px;
+    position: absolute;
+    right: 0px;
+}
+
+.btn {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    margin: -150px 50px auto auto;
+}
+
+.btn1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ECABCE;
+    color: white;
+    font-size: 36px;
+    position: relative;
+    right: 0;
+    box-shadow: black 0px 0px 5px;
+}
+
+.btn2 {
+    margin-bottom: 20px;
+}
+
+.btn3 {
+    margin-bottom: 20px;
+}
+
+.btn1:hover {
+    cursor: pointer;
+}
+
+@keyframes go_title {
+    0% {
+        margin-left: -100%;
+
+    }
+    100%{
+        margin-left: 5%x;
+    }
+}
+
+@media screen and (max-width:1540px){
+    .title-text {
+        font-size: 200px;
+    }
+    .logo {
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width:1250px){
+    .title-text {
+        font-size: 150px;
+    }
+    .logo {
+        font-size: 36px;
+    }
+}
+
+.container-white {
+    width: 85%;
+    margin: 0px auto;
+    height: 100vh;
+}
+
+.main_text {
+    font-family: 'blinkmacsystemfont-regular', sans-serif;
+    font-size: 48px;
+    line-height: 71px;
+}
+
+.main_text2 {
+    margin-left: 80px;
+}
+
+.main_text_div1 {
+    margin-bottom: 50px;
+}
+
+.main_text_div2 {
+    margin-bottom: 50px;
+}
+
+.section_title {
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 56px;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+.pink_circle {
+    position: absolute;
+    z-index: -1;
+    margin: -150px -250px -250px -250px;
+    right: 550px;
+    width: 550px;
+    background-color: #ECABCE;
+    border-radius: 100%;
+    height: 550px;
+    animation: circlee 3s ease-out;
+}
+
+.green_what {
+    position: absolute;
+    z-index: -1;
+    width: 8%;
+    height: 6%;
+    left: 200px;
+    margin-top: 345px;
+    animation: word 3s ease-out;
+    background-color: #C3DFBD;
+    border-radius: 30px;
+}
+
+.screen3 {
+    position: absolute;
+    z-index: -1;
+    margin-top: -50px;
+    margin-left: 52vw;
+    border-radius: 20px;
+    box-shadow: black 0px 0px 10px ;
+    animation: screen 3s ease-out;
+}
+
+.more_info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.details {
+    font-family: 'blinkmacsystemfont-regular', sans-serif;
+    font-size: 32px;
+    width: 50%;
+    margin: 20px;
+    padding: 20px;
+}
+
+.details_title {
+    font-family: 'blinkmacsystemfont-regular', sans-serif;
+    font-size: 48px;
+    list-style: none;
+    text-align: center;
+    background-color: #ECABCE;
+    border-radius: 20px;
+}
+
+.details_title:hover {
+    cursor: pointer;
+}
+
+@keyframes word{
+    0% {
+        height: 125px;
+        width: 300px;
+        left: 70%;
+        border-radius: 0px;
+        margin-top: 280px;
+    }
+    50% {
+        margin-top: 280px;
+        height: 125px;
+        width: 300px;
+        left: 200px;
+        border-radius: 0px;
+    }
+    100% {
+        left: 200px;
+    }
+}
+
+@keyframes circlee{
+    0% {
+        height: 150px;
+        width: 150px;
+        right: 750px;
+        margin-top: 10px;
+    }
+}
+
+@keyframes screen{
+    0% {
+        opacity: 0;
+        margin-top: -1000px;
+        border: none;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.container-white2 {
+    width: 60%;
+    margin: 0px auto;
+    height: 100vh;
+}
+
+.numbers {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'blinkmacsystemfont-regular', sans-serif;
+    font-size: 92px;
+    margin: 150px 0 0 0;
+}
+
+.number {
+    width: 350px;
+}
+
+.container-white2-texts {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'blinkmacsystemfont-regular', sans-serif;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.container-white2-text {
+    width: 350px;
+}
+
+.container-white2-texts2 {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'blinkmacsystemfont-regular', sans-serif;
+    font-size: 30px;
+    margin-bottom: 150px;
+}
+
+.container-white2-text2 {
+    width: 350px;
+}
+
+.h2 {
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 132px;
+    text-align: right;
+    animation: 3s ease-in-out scales;
+}
+
+@keyframes scales {
+    0% {
+        opacity: 0;
+        font-size: 15px;
+        margin-left: 170px;
+    }
+    100% {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+
+.pink_line {
+    background-color: #ECABCE;
+    height: 10px;
+    margin-left: -10px;
+    width: 350px;
+    border-radius: 5px;
+}
+
+.pink_lines {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.green_line {
+    background-color: #C3DFBD;
+    height: 10px;
+    width: 550px;
+    border-radius: 5px;
+    position: absolute;
+    right: 350px;
+}
+
+.flex_div_text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex_text {
+    font-family: 'blinkmacsystemfont-regular', sans-serif;
+    font-size: 48px;
+    margin: 3px 0;
+}
+
+.flex_text2 {
+    margin: 0 0 30px 150px;
+    width: 40%;
+}
+
+.green_line2 {
+    background-color: #C3DFBD;
+    height: 10px;
+    width: 750px;
+    border-radius: 5px;
+    position: absolute;
+    right: 350px;
+}
+
+.screen1 {
+    position: relative;
+    width: 800px;
+    animation: 2s ease-in-out screens;
+}
+
+.screen2 {
+    position: absolute;
+    z-index: 2;
+    width: 1000px;
+    margin-left: -500px;
+    margin-top: 200px;
+    animation: 2s ease-in-out screens2;
+}
+
+@keyframes screens {
+    0%{
+        margin-left: -1500px;
+    }
+}
+
+@keyframes screens2 {
+    0%{
+        margin-left: 2400px;
+    }
+}
+
+.text_div2{
+    margin: 60px 0 100px 60px;
+}
+
+.dollar {
+    width: 300px;
+    position: absolute;
+    margin-left: 800px;
+    margin-top: 100px;
+    z-index: -1;
+}
+
+.green_ygol_top {
+    width: 300px;
+    position: absolute;
+    margin-left: -100px;
+    margin-top: 100px;
+    z-index: -1;
+}
+
+.pink_linee {
+    width: 700px;
+    height: 100px;
+    position: absolute;
+    margin-left: -100px;
+    margin-top: -150px;
+    z-index: -1;
+}
+
+.pink_linee2 {
+    width: 700px;
+    height: 100px;
+    position: absolute;
+    margin-left: -100px;
+    margin-top: -80px;
+    z-index: -1;
+}
+
+.green_circle {
+    position: absolute;
+    z-index: -1;
+    margin: 30px -200px -250px 0px;
+    right: 550px;
+    width: 550px;
+    background-color: #C3DFBD;
+    border-radius: 100%;
+    height: 550px;
+}
+
+.pink_circle2 {
+    position: absolute;
+    z-index: -1;
+    margin: 350px 300px -250px -500px;
+    right: 550px;
+    width: 550px;
+    background-color: #ECABCE;
+    border-radius: 100%;
+    height: 550px;
+}
+
+.pink_blure {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    width: 550px;
+    height: 750px;
+}
+
+.pink_blure2 {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    margin-top: 300px;
+    width: 550px;
+    height: 750px;
+}
+
+.text_bron {
+    font-family: 'blinkmacsystemfont-regular', sans-serif;
+    font-size: 48px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.flex_text1 {
+    font-size: 58px;
+    margin-top: -50px;
+}
+
+.flex_text_margin {
+    margin-bottom: 30px;
+    margin-top: 75px;
+}
+
+.flex_text_margin2 {
+    margin-top: 90px;
+    margin-bottom: 30px;
+}
+
+.fleex {
+    display: flex;
+}
+
+.text_div3 {
+    margin-left: 100px;
+}
+
+.fleex2 {
+    margin-top: 80px;
+}
+
+.green_circle3 {
+    position: absolute;
+    width: 600px;
+    z-index: -1;
+    left: 0;
+}
+
+.pink_circle3 {
+    position: absolute;
+    width: 600px;
+    z-index: -1;
+    right: 0px;
+    margin-top: 300px;
+}
+
+.flexx_text {
+    margin: 45px 0;
+}
+
+.green_bluree {
+    position: absolute;
+    width: 600px;
+    z-index: -1;
+    left: 0;
+    margin-top: 50px;
+}
+
+.green_bluree2 {
+    position: absolute;
+    width: 600px;
+    z-index: -1;
+    right: 0px;
+    margin-top: -300px;
+}
+
+.green_bluree3 {
+    position: absolute;
+    width: 600px;
+    z-index: -1;
+    left: 0;
+    margin-top: 1000px;
+}
+
+.green_bluree4 {
+    position: absolute;
+    width: 600px;
+    z-index: -1;
+    right: 0px;
+    margin-top: 600px;
+}
+
+.flexs_text {
+    margin: 20px 0;
+}
+
+.more {
+    padding: 20px;
+    font-size: 48px;
+    font-family: 'blinkmacsystemfont-regular', sans-serif;
+    margin-top: -10px;
+    border-radius: 50px;
+    border: none;
+    background-color: #C3DFBD;
+}
+
+.more:hover {
+    cursor: pointer;
+}
